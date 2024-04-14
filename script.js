@@ -40,6 +40,7 @@ let messagesIA = [
     'Qual a história social do paciente?',
     'Quais medicamentos o paciente utiliza?',
     'O paciente possui alguma alergia?'
+]
 
 let posIaMessage = 0;
 function newMessageIA(){
