@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside>
+        <nav class = 'navtopo'>
+            <img src="logo.png" alt="logo">
+            <p class="titulo">Unifica Med</p>
+        </nav>
+        <ul>
+            <p class = 'selected'>Conversa</p>
+            <p>Pacientes</p>
+            <p>Consultas</p>
+            <p>Exames</p>
+        </ul>
+        <nav>
+            <p>Nome teste</p>
+        </nav>
+    </aside>
+    <section>
+        <nav>
+            
+        </nav>
+        <article>
+            <div id='chatDisplay'>
+                <p class='recebida oculta' id="modeloEnviada">Olá pergunte oque quiser</p>
+                <p class='enviada oculta' id="modeloRecebida">Qual o quadro de amnesia do paciente Arthur?</p>
+            </div>
+            <nav class = 'navtext'>
+                <input id = 'chatInput' type="text">
+                <img src="enviaIcon.png" alt="envia" id="enviaMsg">
+            </nav>
+        </article>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
