@@ -24,12 +24,14 @@ enviaMsg.addEventListener('click', ()=>{
 proxMsg()
 
 function newMessageUser(text){
-    let modeloMsg = document.getElementById('modeloRecebida').cloneNode(true);
-    modeloMsg.innerText = text;
-    modeloMsg.classList.remove('oculta')
-    chatDisplay.appendChild(modeloMsg);
-    chatInput.value = '';
-    proxMsg()
+    if(text){
+        let modeloMsg = document.getElementById('modeloRecebida').cloneNode(true);
+        modeloMsg.innerText = text;
+        modeloMsg.classList.remove('oculta')
+        chatDisplay.appendChild(modeloMsg);
+        chatInput.value = '';
+        proxMsg()
+    }
 }
 
 let messagesIA = [
@@ -39,7 +41,8 @@ let messagesIA = [
     'Qual a história familiar do paciente?',
     'Qual a história social do paciente?',
     'Quais medicamentos o paciente utiliza?',
-    'O paciente possui alguma alergia?'
+    'O paciente possui alguma alergia?',
+    'Fim da demonstração'
 ]
 
 let posIaMessage = 0;

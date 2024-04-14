@@ -1,8 +1,11 @@
-body{
-    width: 100vw;
-    height: 100vh;
+body {
+    width: 100%;
+    height: 100%;
     display: flex;
     margin: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 p, h1,h2, h3{
     font-family: Helvetica, sans-serif;
@@ -70,7 +73,7 @@ article > div{
     padding: 3vh;
 }
 article p {
-    width: calc(100% - 10%);
+    width: calc(100% - 10vh);
     padding: 2vh;
     border-radius: 0 2vh 2vh 2vh;
 }
@@ -103,8 +106,21 @@ article p {
     height: 100%;
     padding: 2vh;
 }
-@media screen and (max-width: 550px) {
-    nav{
-        width: calc(100% + );
+.toponav{
+    height: 100%;
+    width: 100%;
+    display:none;
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+    aside{
+        display: none;
+    }
+    section{
+        width: 100%;
+    }
+    .toponav{
+        display: flex;
+        justify-content: center;
     }
 }
